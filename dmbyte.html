@@ -1,0 +1,79 @@
+---
+layout: default
+title: Aubrey Garcia's Portfolio
+---
+    <!-- SECTION HEADING -->
+    <div class="section-heading">
+        <h2 class="heading-title" id="to-heading-title">DMByte</h2>
+        <div class="heading-title-hr"><hr></div>
+    </div>
+
+    <!-- CONTENT BODY -->
+    <div id="content-body">
+        <h3>Context</h3>
+        <p>As part of my Capstone project, my group and I created a mobile chatbot that acts as an academic advisor for the Digital Media students at York University. Being a Digital Media student myself, and along with my other group members, we all shared a similar experience of having trouble obtaining accessible advising.</p>
+
+        <div class="gallery">
+            <a href="/assets/dmbyte/dmbyte-login.png">
+                <img class="thumbnail" src="/assets/dmbyte/dmbyte-login.png" width="95%" height="300px"/>
+            </a>
+            <a href="/assets/dmbyte/chatwithbyte.jpg">
+                <img class="thumbnail" src="/assets/dmbyte/chatwithbyte.jpg" width="95%" height="300px"/>
+            </a>
+        </div>
+        <div class="annotations"><p>Figures 1-2. Login screen and free-chat with the bot.</p></div>
+
+        <p>It was a common occurence to get waitlisted for a couple of weeks which meant that urgent questions couldn't get an immediate answer. Moreover, general questions regarding program prerequisites and degree progress needed to be put in the backburner until the appointment. We talked with other students in the program and they all share the sentiment of feeling lost and/or misunderstanding which courses are mandatory, how to calculate their GPA, and what other credits they need to take in order to satisfy their degree requirements, to name a few.</p>
+
+        <a href="/assets/dmbyte/capstone-brainstorm.jpg">
+            <img class="thumbnail" src="/assets/dmbyte/capstone-brainstorm.jpg" width="100%" height="100%"/>
+        </a>
+        <div class="annotations"><p>Figure 3. Mind map of choosing what mental health problem to focus on.</p></div>
+
+        <h3>Role</h3>
+        <p>In this project, I was in charge of systems programming. We used Android Studio to develop the app where I wrote in Java and XML to create the logic system of the chatbot and it's database. I also needed to develop a way to parse natural language and in my search for NLP libraries already available, I decided to incorporate Google's Dialogflow in the app.</p>
+
+        <h3>Process</h3>
+        <a href="/assets/dmbyte/Digital media.jpg">
+            <img class="thumbnail" src="/assets/dmbyte/Digital media.jpg" width="100px" style="display: block; margin-left: auto; margin-right: auto;"/>
+        </a>
+        <div class="annotations"><p>Figure 4. Mind map of the logic flow of the initial stages of the app.</p></div>
+        <p>The app works to personalize each student's progress. We implemented a logic system that takes the student's name and a password (if new to the app) and then creates a database of their student record. The app works through The Set-Up Phase or the Tutorial first where the bot asks what courses the student has taken, if any. After this phase, the student is free to ask the chatbot any sorts of questions they wish. </p>
+
+        <div class="gallery">
+            <a href="/assets/dmbyte/studentSetup.png">
+                <img class="thumbnail" src="/assets/dmbyte/studentSetup.png" width="95%" height="300px"/>
+            </a>
+            <a href="/assets/dmbyte/sceneTransition.png">
+                <img class="thumbnail" src="/assets/dmbyte/sceneTransition.png" width="95%" height="300px"/>
+            </a>
+            <a href="/assets/dmbyte/courseSetup_courseList.png">
+                <img class="thumbnail" src="/assets/dmbyte/courseSetup_courseList.png" width="95%" height="300px"/>
+            </a>
+            <a href="/assets/dmbyte/courseSetup_typing.png">
+                <img class="thumbnail" src="/assets/dmbyte/courseSetup_typing.png" width="95%" height="300px"/>
+            </a>
+        </div>
+        <div class="annotations"><p>Figures 5-8 (left to right). Various scenes taken during the app interaction.</p></div>
+
+        <p>Throughout the interaction, the chatbot will take note of particularly significant answers like the courses they've successfully finished and their grades.</p>
+
+        <h3>Takeaways</h3>
+        <p>This was an extremely ambitious project. Prior to this, my group and I had only Java knowledge to help us. We've never done mobile development, barely worked on databases, and never understood just how complex natural language processing is. I'm sure that I speak for my group when I say that we're still amazed at how much we actually accomplished.</p>
+
+        <p>The problems we encountered were great lessons, the biggest of which is NLP itself. We used Dialogflow by Google to do the blunt of the work, but when it came to developing our Tutorial phase, we needed to write our own logic system. Outside of this phase, Dialogflow would support all responses. However, we found that even with Dialogflow's complex support system, we couldn't use it to a more personalized level. When the student asked for something specific as in what course is available for them to take based on their GPA, Dialogflow had no way of surfacing with the phone's own database.</p>
+                
+        <p>We thought that using Firebase would be better, so we set up a cloud database on top of the one stored in the phone. This was the one obstacle we couldn't find a solution for at the time given that our deadline was a mere week away. We needed to create something presentable so we stuck with perfecting out tutorial phase and adding on to other aspects of the app.</p>
+                
+        <p>I learned more than I've ever had developing the backend of this app. It felt like mental gymnastics and often unsuccessfully grabbing on to the hoops, I fell. But I got back on and my group and I presented our app to the class.</p>
+
+        <p>Our project was chosen to be showcased at the end-of-year Digital Media Exhibition. Below is a video of the compiled working footage of the app and attached explanations.</p>
+
+        <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/phwDRi8Kr48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="annotations"><p>Figure 9. Video documentation of a live preview of the app interaction process.</p></div>
+
+        <div id="breadcrumbs-footer">
+            <a href="/index.html#to-heading-title">Go Back to Home</a>
+            <a href="/moonbox.html#to-heading-title">Next - Moon Box </a>
+        </div>
+    </div>
